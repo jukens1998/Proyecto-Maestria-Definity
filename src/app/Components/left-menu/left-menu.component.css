@@ -1,0 +1,10 @@
+#menu {
+    border-right: 1px solid rgb(214, 211, 211);
+    height: 100%;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.80) !important;
+    background-color: #ce414a;
+  }
+  

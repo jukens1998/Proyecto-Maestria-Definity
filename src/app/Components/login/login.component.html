@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <!--Column 1-->
+    <div class="col-3 text-center mx-2 my-4 py-4 img-thumbnail">
+      <a routerLink="graficas" routerLinkActive="active">Heroes</a>
+    </div>
+    <!--Column 2-->
+    <div class="col-5 text-center mx-2 my-4 py-4 img-thumbnail">
+      <!--image col-2-->
+      <img
+        src="../../../assets/files.png"
+        id="imageCol2"
+        class="img-fluid"
+        alt=""
+      />
+      <!--Text-->
+      <p class="text-muted text-justify">
+        Ingresa aqui tu archivo .xlsx que ya completaste con tus datos.
+      </p>
+      <!--Text-->
+      <!--Form-->
+      <div class="input-group mb-3 mt-4"></div>
+      <hr />
+      <button
+        routerLink="graficas"
+        routerLinkActive="active"
+        type="button"
+        class="btn btn-dark btn-block"
+      >
+        ¡Vamos!
+      </button>
+
+      <div class="input-group my-3">
+        <div class="custom-file">
+          <input
+            (change)="onFileChange($event)"
+            multiple="false"
+            type="file"
+            class="custom-file-input"
+            id="inputGroupFile01"
+            aria-describedby="inputGroupFileAddon01"
+          />
+          <label class="custom-file-label" for="inputGroupFile01"
+            >{{file}}</label
+          >
+        </div>
+      </div>
+    </div>
+    <!--Column 3-->
+    <div class="col-3 text-center  mx-2 my-4  py-4 img-thumbnail">
+      <img src="../../../assets/sheets.png" class="img-fluid" alt="" />
+      <p class="text-muted text-justify">
+        A continuación, encontraras la plantilla que debes completar para poder
+        continuar con el proceso.
+      </p>
+      <hr />
+      <button type="button" class="btn btn-success">Descargar Plantilla</button>
+    </div>
+  </div>
+</div>
+<!--pepe-->
+
+<table class="sjs-table">
+  <tr *ngFor="let row of data">
+    <td *ngFor="let val of row">
+      {{ val }}
+    </td>
+  </tr>
+</table>
+
+<!--pepe-->
