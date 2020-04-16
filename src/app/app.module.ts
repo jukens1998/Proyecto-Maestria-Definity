@@ -16,6 +16,7 @@ import { Eficiencia1Component } from './Components/Views/eficiencia1/eficiencia1
 import { Eficiencia2Component } from './Components/Views/eficiencia2/eficiencia2.component';
 import { DisponibilidadComponent } from './Components/Views/disponibilidad/disponibilidad.component';
 import { TiempoComponent } from './Components/Views/tiempo/tiempo.component';
+import { RightMenuComponent } from './Components/right-menu/right-menu.component';
 const appRoutes: Routes = [
   { path: "", component: GeneralComponent },
   { path: "inicio", component: LoginComponent },
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     Eficiencia1Component,
     Eficiencia2Component,
     DisponibilidadComponent,
-    TiempoComponent
+    TiempoComponent,
+    RightMenuComponent
   ],
   imports: [
     BrowserModule,

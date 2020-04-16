@@ -1,7 +1,68 @@
-<iframe
-  width="800"
-  height="500"
-  src="https://app.powerbi.com/view?r=eyJrIjoiYzNhOGNjYjAtZWYwZS00ODA5LWFmOWYtZjM2NjUwNzM4OTkxIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9"
-  frameborder="0"
-  allowFullScreen="true"
-></iframe>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10">
+      <iframe
+        width="800"
+        height="500"
+        src="https://app.powerbi.com/view?r=eyJrIjoiYzNhOGNjYjAtZWYwZS00ODA5LWFmOWYtZjM2NjUwNzM4OTkxIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9"
+        frameborder="0"
+        allowFullScreen="true"
+      ></iframe>
+    </div>
+    <div class="col-2" id="rightMenu">
+      <div class="pl-2 text-justify" id="menu">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="nav flex-column nav-pills text-center"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <h3 class="mb-3">Reportes</h3>
+              <a
+                class="nav-link mb-2"
+                id="v-pills-settings-tab"
+                data-toggle="pill"
+                routerLink="/GestionTecnologiaBiomedica"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+                >Informe Graficas</a
+              >
+              <a
+                class="nav-link mb-2"
+                id="v-pills-settings-tab"
+                data-toggle="pill"
+                routerLink="/GestionTecnologiaBiomedica"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+                >Informe Datos</a
+              >
+              <a
+                class="nav-link mb-2"
+                id="v-pills-settings-tab"
+                data-toggle="pill"
+                routerLink="/Costos1"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+                >Visualizar Excel</a
+              >
+            </div>
+            <div class="container-fluid" id="submitBtn">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <button type="button" class="btn btn-success btn-block">
+                    Obtener datos .xlsx
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

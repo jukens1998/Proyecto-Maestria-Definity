@@ -1,0 +1,26 @@
+#menu{
+    border-left: 1px solid  rgb(214, 211, 211);
+    height: 100%;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.80) ;
+  background-color: #221f4d;
+}
+#submitBtn{
+  margin-top: 100%;
+}
+
+label {
+  margin-left: 20px;
+}
+#datepicker {
+  width: auto;
+ 
+}
+#datepicker > span:hover {
+  cursor: pointer;
+}
+#rightMenu{
+    padding-right: 0px;
+}
