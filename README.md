@@ -1,3 +1,16 @@
+#Las vistas se componen de views y viewsExcel en las cuales VIEW se encarga de visualizar la grafica en power BI y VIEW Excel se encraga de mostrar los archivos excel, cada una de estas views carga su meno por defecto para el manejo de los links de descargas, por lo tanto la actualización de cualquier link implica el cambio en su vista normal VIEW y VIEW Excel
+
+Ejemplo
+
+Costos.component.html ==> se realizo un cambio en la dirección de descarga d edatos excel
+
+Por lo tanto
+
+CostosExcel.component.html ==> tambien debe ser actualizado 
+
+
+
+
 # Indicadores
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
