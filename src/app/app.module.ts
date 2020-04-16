@@ -17,6 +17,14 @@ import { Eficiencia2Component } from './Components/Views/eficiencia2/eficiencia2
 import { DisponibilidadComponent } from './Components/Views/disponibilidad/disponibilidad.component';
 import { TiempoComponent } from './Components/Views/tiempo/tiempo.component';
 import { RightMenuComponent } from './Components/right-menu/right-menu.component';
+import { Costos1ExcelComponent } from './Components/ViewsExcel/costos1-excel/costos1-excel.component';
+import { Costos2ExcelComponent } from './Components/ViewsExcel/costos2-excel/costos2-excel.component';
+import { DisponibilidadExcelComponent } from './Components/ViewsExcel/disponibilidad-excel/disponibilidad-excel.component';
+import { Eficiencia1ExcelComponent } from './Components/ViewsExcel/eficiencia1-excel/eficiencia1-excel.component';
+import { Eficiencia2ExcelComponent } from './Components/ViewsExcel/eficiencia2-excel/eficiencia2-excel.component';
+import { GeneralExcelComponent } from './Components/ViewsExcel/general-excel/general-excel.component';
+import { GestionTecnologicaBiomedicaExcelComponent } from './Components/ViewsExcel/gestion-tecnologica-biomedica-excel/gestion-tecnologica-biomedica-excel.component';
+import { TiempoExcelComponent } from './Components/ViewsExcel/tiempo-excel/tiempo-excel.component';
 const appRoutes: Routes = [
   { path: "", component: GeneralComponent },
   { path: "inicio", component: LoginComponent },
@@ -29,7 +37,15 @@ const appRoutes: Routes = [
   { path: "Eficiencia2", component: Eficiencia2Component},
   { path: "Disponibilidad", component: DisponibilidadComponent},
   { path: "Tiempo", component: TiempoComponent},
-  { path: "Principal", component: LeftMenuComponent}
+  { path: "Principal", component: LeftMenuComponent},
+  { path: "GeneralExcel", component: GeneralExcelComponent},
+  { path: "GestionTecnologiaBiomedicaExcel", component: GestionTecnologicaBiomedicaExcelComponent},
+  { path: "Costos1Excel", component: Costos1ExcelComponent},
+  { path: "Costos2Excel", component: Costos2ExcelComponent},
+  { path: "Eficiencia1Excel", component: Eficiencia1ExcelComponent},
+  { path: "Eficiencia2Excel", component: Eficiencia2ExcelComponent},
+  { path: "DisponibilidadExcel", component: DisponibilidadExcelComponent},
+  { path: "TiempoExcel", component: TiempoExcelComponent}
 
 
 
@@ -49,7 +65,15 @@ const appRoutes: Routes = [
     Eficiencia2Component,
     DisponibilidadComponent,
     TiempoComponent,
-    RightMenuComponent
+    RightMenuComponent,
+    Costos1ExcelComponent,
+    Costos2ExcelComponent,
+    DisponibilidadExcelComponent,
+    Eficiencia1ExcelComponent,
+    Eficiencia2ExcelComponent,
+    GeneralExcelComponent,
+    GestionTecnologicaBiomedicaExcelComponent,
+    TiempoExcelComponent
   ],
   imports: [
     BrowserModule,
